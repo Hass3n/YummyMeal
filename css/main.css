@@ -1,0 +1,149 @@
+
+
+/*************************Section Meal********************/
+
+.meal-info:hover .meal-title
+{
+    top: 0;
+
+}
+
+.meal-title
+{
+    background-color: rgba(255, 255, 255,.7);
+}
+
+.meal-title
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 110%;
+    overflow: hidden;
+    transition: top .5s;
+}
+
+.col-meal ,.categ ,.col-area 
+{
+    cursor: pointer;
+}
+
+/******************************aside***************************/
+#aside
+{
+    position: fixed;
+    left: -344.062px;
+    
+    top: 0;
+    bottom: 0;
+    
+
+
+}
+
+.logo img
+{
+   
+   
+  
+   width: 50px;
+}
+
+.close-aside 
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+.close-aside .icon
+{
+    cursor: pointer;
+}
+
+
+
+/***********************Details**************************/
+.details-info p
+{
+    line-height: 24px;
+}
+
+.recipes li
+{
+    background-color: #CFF4FC;
+
+    padding-inline: .625rem;
+    padding-block: .3125rem;
+}
+
+.tag .childone
+{
+    background-color: #F8D7DA;
+    display: inline-block;
+
+    padding-inline: .4375rem;
+    padding-block: .3125rem;
+    color: #834349; 
+}
+
+.socila li:nth-child(1)
+{
+
+    background-color: #157347;
+    padding-inline: .4375rem;
+
+}
+
+.socila li:nth-child(2)
+{
+    background-color: #BB2D3B;
+}
+
+
+/*******************Category******************/
+
+
+.Catg-info:hover .Categ-title
+{
+    top: 0;
+
+}
+.categ .Categ-title
+{
+
+    background-color: rgba(255, 255, 255,.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    transition: top .5s;
+    padding-block: .625rem;
+
+}
+
+/******************Search****/
+.form-control::placeholder
+{
+    color: rgba(255, 255, 255,.7);
+}
+
+
+.contact input::placeholder
+{
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+
+.loadscreen
+{
+    z-index: 999;
+}
+
+

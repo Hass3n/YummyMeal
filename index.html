@@ -1,0 +1,272 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal</title>
+
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <!---------------------Fonts-------------------->
+
+
+  <!---fontaswom-------------->
+
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--main css-->
+
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+
+
+<body class="bg-black">
+
+
+  <div class="loadscreen bg-black position-fixed start-0 top-0 end-0 bottom-0  d-flex justify-content-center align-items-center  " >
+    <i class="fa-solid fa-spinner fa-spin fa-4x text-white span-icon"></i>
+  </div>
+  <!----------------------Section Meal-------------------------------->
+
+
+  <section class="main  mt-5    " id="meal">
+
+    <div class="container  ">
+      <div class="row gy-3 row-meal">
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-----------------------Meal Details----------------------------------->
+
+
+  <section class="Meal-details text-white py-5 d-none">
+
+    <div class="container">
+      <div class="row row-details">
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--------------------Categories------------------------------------------>
+
+  <section class="categ d-none py-5">
+    <div class="container  ">
+      <div class="row row-categ gy-3">
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--------------------------------Area----------------------------->
+
+
+  <section class="area mt-5  d-none">
+    <div class="container ">
+      <div class="row row-area g-4">
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-------------  Ingradients------------>
+
+
+  <section class="Ingradient mt-5  d-none">
+    <div class="container ">
+      <div class="row row-ingradient g-5 py-3">
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!---------------------Search------------------------------------------------------->
+
+
+  <section class="search mt-5  d-none ">
+    <div class="container w-75">
+
+      <div class="row search-row ">
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="text" class="form-control bg-transparent text-white Name " placeholder="Search By Name">
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="text" class="form-control bg-transparent text-white letter"
+              placeholder="Search By First Letter">
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <!----------------------form------------------------------->
+  <section class="sec-form  h-100 d-flex align-items-center contact mt-5  d-none">
+    <div class="container w-75 ">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="text" class="form-control " placeholder="Enter Your Name " id="userName">
+            <div class="d-none   bg-danger-subtle text-danger-emphasis text-center rounded-2 mt-2 p-3 text-name ">Special
+              characters and numbers not allowed
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Enter Your Email" id="userEmail">
+            <div class="d-none   bg-danger-subtle text-danger-emphasis text-center rounded-2 mt-2 p-3 text-mail ">Email not
+              valid *exemple@yyy.zzz
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Enter Your Phone" id="userPhone">
+            <div class="d-none   bg-danger-subtle text-danger-emphasis text-center rounded-2 mt-2 p-3 text-phone ">Enter valid
+              Phone Number
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="number" class="form-control" placeholder="Enter Your Age" id="userAge">
+            <div class="d-none   bg-danger-subtle text-danger-emphasis text-center rounded-2 mt-2 p-3 text-age ">Enter valid
+              Age
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Enter Your Password" id="userPassword">
+
+            <div class="d-none   bg-danger-subtle text-danger-emphasis text-center rounded-2 mt-2 p-3 text-password ">
+              Enter valid password *Minimum eight characters, at least one letter and one number:*
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-md-3 mb-sm-1">
+            <input type="password" class="form-control" placeholder="Enter Your Repassword" id="userRepassword">
+
+            <div class="d-none   bg-danger-subtle text-danger-emphasis text-center rounded-2 mt-2 p-3 text-repassword ">
+              Enter valid repassword
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnsubmit d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-danger text-center  submitbtn " disabled>Submit</button>
+
+      </div>
+    </div>
+
+  </section>
+  <!-------------------asidebar------------------------------------------------------>
+
+  <aside id="aside" class="bg-black p-3  d-flex flex-column justify-content-between   ">
+
+    <div class="links ">
+      <ul class="list-unstyled ">
+        <li class="p-2"><a href="#search" class="text-decoration-none text-white">Search</a></li>
+        <li class="p-2"><a href="#categories" class="text-decoration-none text-white">Categories</a></li>
+        <li class="p-2"><a href="#area" class="text-decoration-none text-white">Area</a></li>
+        <li class="p-2"><a href="#ingredients" class="text-decoration-none text-white">Ingredients</a></li>
+        <li class="p-2"><a href="#contact" class="text-decoration-none text-white">Contact Us</a></li>
+
+      </ul>
+    </div>
+    <div class="copy-rigth px-3 ">
+      <div class="icon-copy ">
+        <a href="#" class="text-decoration-none"><i class="fa-brands fa-facebook text-white "></i></a>
+        <a href="#" class="text-decoration-none"> <i class="fa-brands fa-twitter text-white"></i> </a>
+        <a href="#" class="text-decoration-none"><i class="fa-solid fa-earth-americas text-white"></i></a>
+
+
+        <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p>
+
+      </div>
+    </div>
+
+  </aside>
+
+  <!---------------------close aside--------------------->
+
+  <section id="close " class="bg-white  d-flex flex-column justify-content-between align-items-center close-aside p-2">
+
+    <div class="logo    text-center mt-2 ">
+      <img src="images/logo.png" alt="logo">
+
+    </div>
+
+    <div class="icon  mb-1 ">
+      <i class="fa-solid fa-bars text-black fa-2x menu "></i>
+      <i class="fa-solid fa-xmark fa-2x d-none close-icon"></i>
+    </div>
+
+    <div class="icon-share  d-flex flex-column gap-2 ">
+      <a href="#" class="text-decoration-none"><i class="fa-solid fa-earth-americas text-black "></i></a>
+      <a href="#" class="text-decoration-none"><i class="fa-solid fa-share-nodes text-black"></i> </a>
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
