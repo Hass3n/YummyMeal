@@ -5,6 +5,7 @@
 .meal-info:hover .meal-title
 {
     top: 0;
+    
 
 }
 
@@ -145,5 +146,7 @@
 {
     z-index: 999;
 }
+
+
 
 

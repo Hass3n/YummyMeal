@@ -185,12 +185,12 @@ function displayMeal(objMeal, key) {
   for (let i = 0; i < length; i++) {
 
 
-    box += `  <div class="col-sm-12 col-md-3 col-meal" onclick="getDetails('${objMeal[i]['idMeal']}');">
+    box += `  <div class="col-sm-12 col-md-3 col-meal " onclick="getDetails('${objMeal[i]['idMeal']}');" >
     <div class="meal-info rounded-3 overflow-hidden position-relative">
       <img src="${objMeal[i]['strMealThumb']}" alt="meal" class="w-100">
       <div class="meal-title   d-flex align-items-center px-2  ">
 
-        <h4 class="fw-bold">${objMeal[i]['strMeal']}</h4>
+        <h4 class="fw-bold ">${objMeal[i]['strMeal']}</h4>
       </div>
     </div>
   </div>`
@@ -224,6 +224,7 @@ async function getDetails(id) {
 function displayDetails(Objdetails) {
 
 
+  secSearch.classList.replace('d-block', 'd-none');
 
 
 
@@ -794,3 +795,7 @@ function enableButton()
     submit.removeAttribute('disabled');
   }
 }
+
+
+
+new WOW().init();
