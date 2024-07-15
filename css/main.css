@@ -147,6 +147,21 @@
     z-index: 999;
 }
 
+/***********************Aanimation******************************************/
+.logo img
+{
+    animation:  imagerotate 3s ;
+}
+@keyframes imagerotate {
 
+    0%
+    {
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 
