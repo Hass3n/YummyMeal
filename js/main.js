@@ -3,6 +3,8 @@
 
 $(document).ready(function () {
   $('#aside ').css("left", `-${$('#aside').outerWidth()}`);
+  $('.links ul li').animate({top:'300px'},500);
+
   loadpage();
  
     
@@ -41,6 +43,13 @@ $('.icon').on('click', function () {
     $('.close-aside').animate({ left: `${$('#aside').outerWidth()}` }, 500);
     $('.menu').addClass('d-none')
     $('.close-icon').removeClass('d-none');
+    $('.links ul li').eq(0).animate({top:'0px'},500);
+    $('.links ul li').eq(1).animate({top:'0px'},600);
+    $('.links ul li').eq(2).animate({top:'0px'},700);
+    $('.links ul li').eq(3).animate({top:'0px'},800);
+    $('.links ul li').eq(4).animate({top:'0px'},900);
+
+    
   }
 
 
@@ -52,6 +61,8 @@ $('.icon').on('click', function () {
     $('.close-aside').animate({ left: '0px' }, 500);
     $('.menu').removeClass('d-none')
     $('.close-icon').addClass('d-none');
+
+    $('.links ul li').animate({top:'300px'},500);
 
 
   }
